@@ -1,0 +1,15 @@
+export const ENV = {
+  appId: process.env.VITE_APP_ID ?? "",
+  cookieSecret: process.env.JWT_SECRET ?? "",
+  databaseUrl: process.env.DATABASE_URL ?? "",
+  oAuthServerUrl: process.env.OAUTH_SERVER_URL ?? "",
+  ownerOpenId: process.env.OWNER_OPEN_ID ?? "",
+  isProduction: process.env.NODE_ENV === "production",
+  forgeApiUrl: process.env.BUILT_IN_FORGE_API_URL ?? "",
+  forgeApiKey: process.env.BUILT_IN_FORGE_API_KEY ?? "",
+  vercelCronSecret: process.env.VERCEL_CRON_SECRET ?? process.env.CRON_SECRET ?? "",
+  researchAdapter: process.env.RESEARCH_ADAPTER ?? "",
+  researchLlmApiUrl: process.env.RESEARCH_LLM_API_URL ?? "",
+  researchLlmApiKey: process.env.RESEARCH_LLM_API_KEY ?? "",
+  researchLlmModel: process.env.RESEARCH_LLM_MODEL ?? "",
+};
