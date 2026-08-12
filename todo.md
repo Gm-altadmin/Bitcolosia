@@ -1,0 +1,197 @@
+# Yayın Erişim Sorunu
+
+- [x] Yayın alanının HTTPS erişimini doğrula — kök rota açılıyor.
+- [x] Geliştirme sunucusunu yeniden başlatıp önizlemeyi kontrol et — servis yeniden başladı.
+- [x] Mevcut checkpoint yayınını doğrula — yeni checkpoint gerektirmedi.
+- [x] `?code=...` biçimini doğrudan test et — `?code=test` ile yayın rotası açıldı.
+- [x] `?code=...` hatası ile kök yayın rotası arasındaki farkı ayır — sorgu parametresi uygulamayı engellemiyor.
+- [x] Kök alan adı için DNS ve HTTPS yanıtını yeniden test et.
+- [x] Yayın alanı ile kullanıcı ağındaki bağlantı resetini karşılaştır.
+- [x] Yeni yayın checkpoint'i oluştur ve alternatif bağlantıyı doğrula.
+- [x] Kullanıcıya kesin teşhis ve uygulanabilir erişim adımlarını bildir.
+- [x] Sandbox DNS/HTTPS testi — alan adı DNS çözülüyor ve HTTPS `200 OK` dönüyor.
+- [x] IPv4/IPv6 karşılaştırması — IPv4 `200 OK`, IPv6 bağlantısı kurulamıyor; sorun ağın IPv6 yoluyla ilişkili olabilir.
+- [x] Kullanıcı tarafında IPv6 kapatma adımı başarısız oldu; alternatif yayın/erişim yolu kontrol edildi.
+- [x] Mevcut checkpoint ve alan adı durumunu yeniden doğrula.
+- [x] Yeni checkpoint ile yayın sürümünü yenile.
+- [x] Yeni checkpoint sonrası alan adı erişimini kontrol et — kullanıcıda ERR_CONNECTION_RESET sürüyor.
+- [x] Aynı yayını alternatif geçici erişim adresiyle karşılaştır — önizleme adresi kullanıcı tarayıcısında açıldı.
+- [x] Alan adı/Cloudflare erişim sorununda resmi destek yolunu belirle.
+- [x] Altı eyaletin adlarını, temalarını ve branş karşılıklarını tanımla.
+- [x] Gemini raporundaki 100 satırı ilgili eyaletlere bağla; Chainlink tekrarını işaretle.
+- [x] Eyaletleri oyun veri modeline, harita bölgelerine ve arayüze ekle.
+- [x] Eyalet görünümünü doğrula ve yeni checkpoint oluştur.
+- [x] 100 varlık kataloğu için arama ve eyalet filtresi ekle.
+- [x] Varlık detay paneli ve rapor satırı/tekrar uyarısı ekle.
+- [x] Katalogu masaüstü ve mobilde doğrula; yeni checkpoint oluştur.
+- [x] Öğretici başlangıç ekranı ve tek hedefli ilk görev akışını tanımla — kullanıcı tek pencere veri ekranı istediği için kapsamdan çıkarıldı.
+- [x] Oyuncuya sırayla aday seçme, faz ilerletme ve sonucu okuma adımlarını göster — kullanıcı tek pencere veri ekranı istediği için kapsamdan çıkarıldı.
+- [x] Gelişmiş eyalet/katalog özelliklerini öğretici tamamlanana kadar geri plana al — kullanıcı tek pencere veri ekranı istediği için kapsamdan çıkarıldı.
+- [x] Öğretici akışı masaüstü ve mobilde test edip yeni checkpoint oluştur — kullanıcı tek pencere veri ekranı istediği için kapsamdan çıkarıldı.
+- [x] Öğreticide piyasa nabzını karar önerisi değil, yalnızca dış dünya bağlamı olarak göster — kullanıcı tek pencere veri ekranı istediği için kapsamdan çıkarıldı.
+- [x] İlk turda sırayla aday seçimi, su yatırımı ve faz ilerletme için görünür görev kartları ekle — kullanıcı tek pencere veri ekranı istediği için kapsamdan çıkarıldı.
+- [x] İlk tur tamamlanmadan eyalet ve 100 varlık katalog etkileşimlerini kilitle veya azalt — kullanıcı tek pencere veri ekranı istediği için kapsamdan çıkarıldı.
+- [x] Oyun haritası, aday, su yatırımı ve öğretici panellerini ana ekrandan kaldır.
+- [x] Altı kategori için tek pencerede gerçek veri tablosu ve kategori özetleri oluştur.
+- [x] Sadece veri izleme ve son güncelleme durumunu göster; yatırım eylemi ekleme.
+- [x] Yeni sade ekranı masaüstü ve mobilde doğrula; yeni checkpoint oluştur.
+- [x] Tek pencereli altı kategorili veri ekranı için yeni yayın checkpoint’i oluştur.
+- [x] 100 varlık için sağlayıcı ID eşleştirme manifestosu oluştur.
+- [x] Eşleşmeyen, belirsiz veya tekrarlı kayıtları işaretle.
+- [x] Sunucu tarafında tek toplu piyasa snapshot isteği için veri sözleşmesi yaz.
+- [x] Kota, önbellek, son başarılı snapshot ve hata durumlarını doğrula.
+- [x] 100 varlık için sağlayıcı ID eşleştirme manifestosu oluştur — 99 kayıt doğrulandı.
+- [x] Eşleşmeyen, belirsiz veya tekrarlı kayıtları işaretle — SANG erişilemez, LINK tekrarı tek sağlayıcı ID’sine indirildi.
+- [x] Sunucu tarafında tek toplu piyasa snapshot isteği için veri sözleşmesi yaz — 98 benzersiz ID tek istekte çekiliyor.
+- [x] İlk snapshot ve arayüz görünümü doğrula — 60 sn önbellek, 24 saatlik değişim, son başarılı veri ve hata durumları gösteriliyor.
+- [x] Her kategoride varlıkları 24 saatlik değişime göre otomatik sırala.
+- [x] 98 canlı sağlayıcı kaydı için tek toplu fiyat geçmişi ve sparkline veri sözleşmesi oluştur.
+- [x] Her varlık satırına gerçek fiyat geçmişinden mini grafik ekle.
+- [x] Sıralama ve sparkline görünümünü masaüstü/mobilde doğrula; yeni checkpoint oluştur.
+- [x] 100 vatandaş için eyalet kimliği, parsel kimliği ve başlangıç sanal arsa değerini tanımla.
+- [x] Gerçek 24 saatlik piyasa değişimini sınırlı, yalnızca oyun içi parsel değer etkisine dönüştür.
+- [x] Altı eyaletin vatandaş/parsel durumunu gösteren arsa ekonomisi ekranı ekle.
+- [x] Sanal arsa değerleme modelini test et ve masaüstü/mobilde doğrula; yeni checkpoint oluşturma son kontrole bırakıldı.
+- [x] Her vatandaşın parsel başlangıç değerini 100 L olarak ayarla; 1 USD = 1 L oyun kurunu belirt.
+- [x] İlk değerleme snapshot’ını kullanıcı saat diliminde ertesi gün 10:30’a hazırlamak için zamanlama yaklaşımını belirle.
+- [x] İlk değerlemeden sonra uygulamanın günlük mü, yalnızca tek seferlik mi çalışacağını kullanıcıyla netleştir.
+- [x] Her sabah 10:30 yerel saat için günlük parsel değerleme zamanlamasını hazırla.
+- [x] İlk değerlemeden sonra uygulamanın günlük mü, yalnızca tek seferlik mi çalışacağını kullanıcıyla netleştir — her sabah günlük değerleme onaylandı.
+- [x] Kullanıcının saat dilimini güvenli biçimde sakla ve günlük 10:30 değerleme zamanını bu timezone’a göre hesapla/güncelle.
+- [ ] Scheduled `/api/scheduled/daily-parcel-valuation` endpoint’ini yayın alanında doğrula ve cron callback sonucunu kaydet.
+- [x] Günlük Heartbeat işi etkin ve ertesi gün 07:30 UTC / 10:30 Europe-Istanbul için tanımlı; yayın endpoint’i cron dışı isteği 403 ile reddediyor.
+- [x] Kullanıcının tarayıcı saat dilimini yönetici ayarıyla güvenli biçimde kaydet ve günlük 10:30 cron ifadesini güncelle.
+- [x] Tarayıcı saat dilimi kaydetme düğmesini yalnızca yönetici kullanıcıya göster ve yetkisiz durumları açıkla — isAuthenticated + admin rolü koşulu, yönetici olmayanlar için açıklama ve oturum açmayanlar için giriş düğmesi eklendi.
+- [x] Saat dilimi güncelleme işlemi için kullanıcı arayüzünde başarı/hata geri bildirimi ekle — mutation sonucu “Kaydedildi” veya “Kaydedilemedi” olarak gösteriliyor.
+- [x] Yönetici oturumu ile tarayıcıdan saat dilimi kaydetme akışını doğrula — yayın alanında düğme tıklandı ve “Kaydedildi: Europe/Istanbul · günlük 10:30 (0 30 7 * * * UTC)” yanıtı göründü.
+- [x] Mevcut altı eyalet adını kullanıcı raporundaki altı sektör başlığıyla karşılaştır.
+- [x] Eyalet başlıklarını rapordaki Sektör 1–6 adlarıyla güncelle.
+- [x] 100 vatandaşın ve 100 parselin sektör bazlı dağılımını rapor listesine karşı doğrula.
+- [x] Güncellenen sektör adlarını masaüstü ve mobilde doğrula; yeni checkpoint oluştur.
+- [x] Parsel değerini yüzde değişiminden değil varlığın USD/L/mL karşılığından üretme kuralını kesinleştir.
+- [x] Onaylı formül: parsel değeri = 100 L + vatandaş varlığının güncel USD fiyatının L/mL karşılığı.
+- [x] 1 L = 1.000 mL hassasiyetini değerleme hesapları ve arayüz biçimlendirmesine ekle.
+- [x] Mevcut 100 parseli yeni hassas değerleme modeliyle güvenli biçimde yeniden hesapla.
+- [x] Düşük fiyatlı bir varlığın 0,001 USD → 0,002 USD örneğini test et ve masaüstü/mobilde doğrula; checkpoint oluşturma son kontrole bırakıldı.
+- [x] Hassas USD/L/mL parsel değerleme modeli ve 100 parsel yeniden hesaplaması için yeni yayın checkpoint’i oluştur.
+- [x] Mevcut 79.156 L parsel toplamının yüksek fiyatlı varlıkların tam USD değerinden kaynaklandığını sayısal olarak doğrula.
+- [x] 100.000 L toplam başlangıç bütçesi için vatandaş başına taban parsel değerini ve düşük fiyat etkisi ölçeklemesini tasarla.
+- [x] Yüksek fiyatlı varlıkların parsel toplamını yapay biçimde büyütmesini önleyen dengeli dönüşüm kuralını uygula.
+- [x] Düzeltilmiş 100 parsel toplamını ve gün içi değişim sınırını masaüstü/mobilde doğrula; yeni checkpoint oluşturma son kontrole bırakıldı.
+- [x] Onaylanan denge kuralı: toplam 100.000 L başlangıç, vatandaş başına 1.000 L taban ve günlük en fazla ±10 L fiyat farkı etkisi.
+- [x] 100 parselin mevcut değerlerini 1.000 L tabana güvenli biçimde sıfırla ve yeni fiyat referanslarını kaydet.
+- [x] Günlük değerleme işini, tam token fiyatı yerine referans fiyat farkını ±10 L sınırıyla uygulayacak şekilde güncelle.
+- [x] Dengeli 100.000 L parsel ekonomisi için yeni yayın checkpoint’i oluştur.
+- [x] SANG/erişilemeyen vatandaş parselini referans fiyat bekliyor olarak açıkça işaretle; yanlış fiyat üretme.
+- [x] Dengeli model sonrası referenceUsdPrice doluluk durumunu doğrula ve 99/100 veri kapsamını arayüzde göster.
+- [x] Sektör 1–6 başlık güncellemesinden sonra yeni bir yayın checkpoint’i oluştur.
+- [ ] Yayınlanmış scheduled endpoint için başarılı dry-run callback yanıtını kaydet.
+- [ ] Üç dry-run zamanlayıcısında callback kaydı oluşmadı; ilk gerçek 10:30 çalışmasından sonra günlük job logunu doğrula.
+- [ ] Etkin günlük job henüz çalışmadı; ilk planlı 10:30 yürütmesinden sonra callback gövdesini ve değerleme kaydını kontrol et.
+- [x] İlk günlük değerleme kartında 07:30 yerine seçili saat dilimindeki 10:30 yerel saatini göster.
+- [x] Saat gösterimi düzeltildikten sonra masaüstü/mobilde 10:30 değerini doğrula; yeni checkpoint oluşturma son kontrole bırakıldı.
+- [x] İlk günlük değerleme kartındaki 10:30 yerel saat gösterimini mobil ekranda doğrula.
+- [x] OAuth callback failed hatasının sunucu günlükleri ve dönüş URL’si açısından nedenini teşhis et — eksik users tablosu saptandı.
+- [x] Yayın alanı için OAuth dönüş yapılandırmasını düzelt — users tablosu şemayla uyumlu oluşturuldu; üretim giriş doğrulaması bekliyor.
+- [x] Yönetici oturumuyla tarayıcı saat dilimi kaydetme akışını tekrar test et — yayın alanında düğme tıklandı; ayar Europe/Istanbul, UTC+3 ve 10:30 ile güncellendi.
+- [x] OAuth düzeltmesinden sonra yayın alanında callback’in başarıyla tamamlandığını ve yönetici oturumunun açıldığını doğrula — users tablosunda admin kullanıcı kaydı oluştu.
+- [x] Yönetici oturumu ile Bu tarayıcı saatini kaydet akışında başarı mesajını uçtan uca doğrula — browser çıktısında “Kaydedildi: Europe/Istanbul · günlük 10:30 (0 30 7 * * * UTC)” görüldü.
+- [x] OAuth düzeltmesinden sonra yayın alanında oturum açıldığını araç tabanlı kanıtla doğrula — yöneticiye özel kaydet düğmesi yayın alanında görünür; admin kullanıcı lastSignedIn kaydı 2026-08-12 10:21:25 olarak doğrulandı.
+- [x] Yönetici saat dilimi kaydının veritabanı ayarlarına işlendiğini sorgu ile doğrula — Europe/Istanbul, UTC+3, 10:30 ve güncel job kimliği kaydedildi.
+- [x] OAuth sonrası oluşan kullanıcı kaydını ve lastSignedIn zamanını sorgulayarak yayın alanında girişin tamamlandığını belgelemek.
+- [x] İlk gerçek yürütmeden önce günlük job geçmişini sorgula — RN29edpgyS52ERgMViMgL9 için toplam 0 çalıştırma doğrulandı; ilk tetikleme 13 Ağu 10:30 Europe/Istanbul bekleniyor.
+- [x] Piyasa yönü göstergesinin mevcut ortalama hesaplamasını canlı snapshot ile karşılaştır.
+- [x] Eşit ağırlıklı ortalama ile piyasa değeri ağırlıklı yön hesabını temsiliyet açısından değerlendir.
+- [x] Piyasa yönü etiketini, hesaplamasını ve açıklamasını piyasa değeri ağırlıklı modele göre düzelt; sonuçları doğrula.
+- [x] Piyasa değeri ağırlıklı yön hesabı için yeni yayın checkpoint’i oluştur.
+- [x] Kullanıcı onayıyla bugünün gerçek piyasa snapshot’ını kullanarak bir defalık manuel sanal parsel değerlemesi çalıştır.
+- [x] Manuel değerleme sonrası 100 parsel, eyalet toplamları ve değerleme kaydını doğrula.
+- [x] Manuel değerleme sonrası güncellenmiş parsel değerlerini mobil görünümde yeniden doğrula.
+- [x] Simülasyonun canlı piyasa snapshot yenilemesi ile günlük 10:30 değerleme döngüsünü kullanıcı için ayrıntılı olarak açıkla.
+- [x] Vatandaş başına ±10 L günlük sınırın 100.000 L başlangıç bütçesi üzerindeki denge etkisini sayısal örneklerle açıkla.
+- [x] Gemini raporundaki 100 varlığın altı sektör arasındaki dağılımını ayrıntılı tablolarla göster.
+- [x] Altı sektör için birer yorumcu rolü, görev tanımı ve görünür sorumluluk alanı tasarla — Aren Altın, Derya Ağ, Lina Zekâ, Bora Likit, Ece Veri ve Mert Kültür kalıcı sektör sorumluları olarak eklendi.
+- [x] Her gün 11:15’teki sektör yorumcusu toplantısının veri kesitini ve ertesi gün için dört varlık sıralama kuralını netleştir — yeni kural 11:30 kilitli tahmin turu olarak güncellendi.
+- [x] 1–4 tahmin için ayrı madalya sistemi mi yoksa yalnızca sıralı rozet mi kullanılacağını kesinleştir; yorumcu altın yıldızı ile varlık gümüş madalyası kuralını buna göre sabitle — 1–4 sıralı öngörü rozetleri; gerçek kazanan listede ise gümüş yuvarlak madalya, 1. sıradaysa yorumcuya altın yıldız uygulanır.
+- [x] Günlük turu 10:30 gerçek sonuç, 10:45 ödül töreni ve 11:30 ertesi gün tahminleri olarak yeniden tanımla.
+- [x] Doğru tahmin eden yorumcuya altın yıldız, listede doğru çıkan varlığa gümüş yuvarlak madalya verme kuralını kesinleştir.
+- [x] Yorumcu ajanlarının dış veri kaynaklarından araştırma yapması, hata geçmişinden öğrenmesi ve yapay zekâ ile ortak değerlendirme yapması için güvenli çalışma modelini tartış.
+- [x] Su barajı kuralında yalnızca kazanan mı, yoksa listede olup pozitif sonuçlanan tüm tahminler mi katkı verir; negatif gün davranışı ve günlük tavanları nihai hale getir — kilitli dört tahminden pozitif sonuçlananların +10 L üstü fazlalığı kullanılır; negatif/0 sonuç katkı vermez; varlık tavanı 100 L, sektör tavanı 250 L’dir.
+- [x] Altı sektörün ödüllerini birbirinden bağımsız hesaplama; sektörler arası sıralama ve rekabet oluşturmama ilkesini kesinleştir.
+- [x] 11:30’da kilitlenen yorumun sonradan değiştirilememesi, yorumcunun sonraki yorumuna kadar sürekli araştırması ve gün içindeki öz-denetim/hata öğrenmesi kuralını tanımla.
+- [x] Altı sektör yorumcusu için hafıza günlüğü, kaynak kanıtı, tahmin, sonuç ve hata öğrenmesini saklayan Python odaklı veri şemasını tasarla.
+- [x] 10:30 değerleme, 10:45 ödül töreni ve 11:30 yeni tahmin turu için otomatik iş akışı ve idempotent yürütme mantığını tasarla.
+- [x] Yöneticinin su barajına ekleyeceği doğrulanmış gerçekleşmiş fazlalık değerinin formülünü ve örnek hesaplarını ayrıntılandır.
+- [x] Altı yorumcunun adlarını, sektör sorumluluklarını, 1–4 sıralı rozet sistemini ve sektör bazlı ödül kurallarını kalıcı veri modeline ekle.
+- [x] Su barajı için her seçilmiş pozitif tahmine dayalı varlık başı 100 L, sektör başı 250 L günlük kredi tavanını ve ham fazlalık denetim kaydını uygula.
+- [x] Kaynak kanıtı, araştırma günlüğü, öz-denetim ve hata dersi kayıtlarını saklayan güvenli yapay zekâ destekli yorumcu öğrenme servisini uygula — altı sektör için 6 kaynaklı canlı araştırma notu yorumcu hafızasına yazıldı ve sorguyla doğrulandı; günlük araştırma ajanı da 20:00 Europe/Istanbul için etkin.
+- [x] 10:30 sonuç kesiti, 10:45 ödül töreni ve 11:30 kilitli tahmin turu için idempotent zamanlanmış iş uçlarını ve kayıtlarını uygula.
+- [x] Yönetici için 10:45 ödül töreni sonucu, yorumcu yıldızları, varlık madalyaları, araştırma günlüğü özeti ve su barajı bakiyesini gösteren paneli ekle.
+- [x] Yorumcu ödül/baraj hesaplarını birim testleriyle, yönetim panelini masaüstü ve mobilde doğrula.
+- [x] Zaman bağımsız yönetici denemesi için altı yorumcunun mevcut canlı veriyle ilk kilitli tahmin turunu güvenli biçimde oluştur — altı sektör kilitlendi; Sektör 1 tek mevcut varlıkla (BTC), diğerleri dörder tahminle kaydedildi.
+- [ ] Aynı deneme turunda gerçek 10:30 sonuç kesiti oluştuğunda 10:45 ödül hesabı ve su barajı kredi kayıtlarını idempotent biçimde çalıştır.
+- [x] Deneme sonrası altı tahmin, yıldız/madalya, baraj hareketi ve panel görünümünü sorgu ile doğrula — deneme ön izlemesi göründü; gerçek ödül/baraj kayıtları sorguda 0 kaldı.
+- [x] Dörtten az erişilebilir varlığa sahip sektörlerde tahmin sayısını mevcut varlık sayısıyla sınırlayarak tek varlıklı Sektör 1’in deneme ve günlük turunu engellemesini düzelt; birim test ekle.
+- [x] Tahmin üretimi başarısız olduğunda sektör/model bağlamlı sunucu hatası ve yönetici panelinde görünür hata geri bildirimi göster; LLM çağrısının veritabanı kaydından önce sessizce beklemesini önle.
+- [x] LLM’in 600 karakter sınırını aşan tahmin gerekçelerini güvenle daraltıp tüm sektörlerin kilitli tahmin turunu tamamlamasını sağla; kalan sektörleri deneme ile doğrula.
+- [x] Gerçek günlük ödül kayıtlarını ve su barajını değiştirmeden, mevcut canlı veriyle altı sektörün deneme skoru ve varsayımsal baraj katkısını gösteren yönetici ön izlemesini ekle.
+- [x] Kullanıcının onayıyla 12 Ağustos 11:30’da kilitlenen altı yorumcu tahminini ilk resmî tur olarak koru.
+- [ ] 13 Ağustos 10:30 gerçek sonuç kesiti sonrasında ilk resmî tahminlerin parsel değerlemesi ve ödül için uygunluğunu doğrula.
+- [ ] 13 Ağustos 10:45 ödül töreni sonrasında yıldız, madalya ve su barajı kayıtlarını sorgu ve panel üzerinden doğrula.
+- [x] Mevcut Manus bağımlılıkları, haricî veritabanı, OAuth, yapay zekâ ve zamanlanmış işler için Vercel taşıma envanteri ve sınırlarını belgele.
+- [x] VS Code–GitHub–Vercel için vercel.json, ortam değişkeni örneği, GitHub Actions doğrulama iş akışı ve yerel geliştirme komutlarını ekle.
+- [x] Vercel dağıtımına geçişte gerekli servis eşleştirmelerini ve adım adım kurulum sırasını Türkçe rehberde açıkla.
+- [x] Eklenen taşınabilirlik yapılandırmasını test, tür denetimi ve JSON/iş akışı doğrulamasıyla kontrol et.
+- [x] Vercel serverless API’de ödül töreni ve su barajı için taşınabilir, salt-okunur JSON veri sözleşmesi ekle.
+- [x] Ödül sonucunu, yıldız/madalya durumlarını, baraj bakiyesini ve boş/bekleme durumlarını Vercel uyumlu frontend kartlarında göster.
+- [x] Vercel yapılandırmasıyla API yönlendirmesi, masaüstü/mobil görünüm ve üretim derlemesini doğrula.
+- [x] Yorumcuların geçmiş tahmin isabeti, altın yıldız/madalya sonucu ve hata derslerini gerçek kayıtlardan özetleyen analiz veri sözleşmesi ekle.
+- [x] Altı yorumcunun araştırıyor, kilitli, sonuç bekliyor ve ödül aldı durumlarını gösteren canlı durum çubuğunu tasarla.
+- [x] Doğrulanmış su barajı hareketleri ile madalya kazanan varlıkları gerçek veriye dayalı dinamik animasyonla görselleştir.
+- [x] Analiz merkezi, canlı durum ve hareketli ödül/baraj görünümlerini masaüstü/mobilde test et.
+- [x] Altı yorumcu için ortak 3B haber odası görsel hedefini; büyük masa, uzun beyaz sakallı baş yorumcu, kobolt haberciler ve yazılı araştırma notlarıyla tasarla.
+- [x] Araştırma günlüğündeki gerçek kaynak notlarını 3B odaya gelen kâğıtlar ve oda durumu olarak bağlayan veri sözleşmesini ekle.
+- [x] Tarayıcıda performanslı çalışan 3B oda, kobolt hareketleri, kâğıt teslimi ve erişilebilir azaltılmış hareket modunu uygula.
+- [x] Haber odası sahnesini masaüstü/mobilde görsel olarak doğrula ve ana panelden erişilebilir kıl.
+- [x] Babylon haber odası motorunu yalnızca oda açıldığında dinamik içe aktararak ana Vercel arayüz paketine gereksiz 3B yük bindirmesini önle.
+- [x] Haber odası modalında boş kalan Babylon canvas alanının çalışma zamanı hatasını teşhis et; masa, baş yorumcu ve koboltların görünür render edildiğini tarayıcıda doğrula.
+- [x] Altı sektör yorumcusu için renk, masa düzeni, baş yorumcu görünümü ve kobolt davranışı farklılaşan ayrı Three.js oda tanımlarını oluştur.
+- [x] `/haber-odalari/:sectorId` biçiminde altı odayı tek Vercel URL alanında çalıştıracak dinamik frontend rota ve serverless veri sözleşmesini ekle.
+- [x] Her sektörün gerçek araştırma günlüğünü, geçmiş hata dersini ve kilitli tahminini kullanarak kobolt kâğıdı metni oluşturan güvenli üretim mantığını ekle.
+- [x] Altı odanın oda seçicisini, klavye erişimini, azaltılmış hareket davranışını, masaüstü/mobil görünümünü ve Vercel üretim derlemesini doğrula.
+- [x] Her odadaki sol ve sağ kobolt için araştırma ile öğrenme/tahmin kaydından türeyen iki ayrı sektöre özgü kâğıt metni göster.
+- [x] Günlük yorumcu araştırma ajanını altı sektör için en fazla ikişer kaynak bağlantılı kısa not, kaynak türü etiketi ve yalnızca araştırma endpoint’ine yazma kuralıyla güncelle — etkin zamanlama ayrıntısı kullanıcı talimatıyla bire bir eşleşiyor.
+- [x] Güncellenen ajan talimatında yatırım tavsiyesi, fiyat tahmini, uydurma/doğrulanmamış kaynak ve endpoint dışı yazma olmadığını denetle — altı sektörün her birinde kaynak URL’si ve official/verified_news etiketiyle birer araştırma notu sorgulandı.
+- [x] Proje ZIP paketine girecek dosyaları ve dışarıda bırakılacak gizli anahtar, bağımlılık, geliştirme günlükleri ile dağıtım çıktısı kurallarını doğrula.
+- [x] GitHub ve Vercel’e aktarılabilir, gizli bilgi içermeyen proje ZIP paketini oluştur ve paket içeriğini denetle — 219 dosyalı, 346.199 baytlık paket denetimden geçti.
+- [x] ZIP paketi üzerinden GitHub deposu oluşturma, dosyaları yükleme, ortam değişkenlerini ekleme ve Vercel projesine bağlama adımlarını Türkçe belgeye yaz.
+- [x] Ana ekranın gerçek piyasa snapshot’ından her sektör için canlı varlık fiyatı, 24 saatlik değişim, güncellik ve sıralama verisini haber odalarına aktaracak veri sözleşmesini ekle.
+- [x] Altı oda sahnesinde sol/sağ akışa araştırma notu ile canlı sektör varlık satırlarını ayrı kobolt kâğıtları olarak bağla.
+- [x] Canlı veri bağlı oda akışını bekleme/hata durumlarıyla masaüstü ve mobilde doğrula — altyapı odasında ETH/SOL dahil gerçek satırlar tarayıcıda, yüklenme durumu mobil görünümde doğrulandı.
+- [x] Oda canlı varlık akışına en çok kazandıran, en çok kaybettiren ve rapor sırası filtrelerini ekle.
+- [x] Sol/sağ canlı varlık satırına tıklanınca gerçek sparkline ve 24 saatlik piyasa verisini gösteren detay analiz penceresini ekle.
+- [x] Kobolt kâğıdına tıklanınca canlı sektör verisi ile doğrulanabilir araştırma notundan türetilen, yatırım tavsiyesi içermeyen kısa piyasa özetini göster.
+- [x] Filtre, varlık detayı ve kobolt özeti etkileşimlerini test, masaüstü/mobil görünüm ve erişilebilirlik açısından doğrula.
+- [x] Canlı varlık detay penceresinin Radix tema/katman çakışmasında görünmemesini, oda temasına açıkça tanımlı arka plan ve z-index değerleriyle düzeltip tarayıcıda doğrula.
+- [x] Kobolt yapay zekâ özetinde yetkisiz isteklerin nedenini açıkça göster, yönetici oturumu ile özet üretimini doğrula ve model hatasını oturum hatasından ayır — yönetici oturumundaki özet tarayıcıda başarıyla üretildi; yetkisiz hata metni açıklayıcı olarak korunuyor.
+- [x] Kobolt özet servisinde boş veya JSON olmayan model yanıtını açık hata bağlamı ve güvenli yeniden denemeyle ele al; gerçek özet üretimini sunucu testinde doğrula.
+- [x] Resmî, doğrulanmış haber ve sosyal sinyal alan adlarını kod düzeyinde sınıflandıran; bilinmeyen alan adlarını reddeden kaynak güven politikasını uygula.
+- [x] Araştırma notlarına yayın zamanı, politika sürümü, içerik hash benzersizliği ve kabul/red gerekçesi ekleyerek sektör başına en fazla iki taze kaydı sunucuda zorunlu kıl.
+- [x] Araştırma çalıştırmaları için aday/kabul/red/tekrar sayaçlarını ve sağlayıcı-LLM bütçe kullanımını kalıcı denetim kaydında sakla.
+- [x] Manus veri API’si ve Vercel’de değiştirilecek haber sağlayıcısı için aynı sözleşmeyi kullanan adapter katmanını ekle; kaynak içeriğini LLM’e doğrulanabilir bağlam olarak ver.
+- [x] Vercel Cron Secret, haber sağlayıcısı anahtısı, araştırma adapter ayarları ve taşıma sırasını ortam şablonu ile mimari rehberinde güncelle.
+- [x] Kaynak sınıflaması, freshness, hash deduplikasyonu, kota, reddedilen URL ve adapter fallback kurallarını birim testleriyle doğrula.
+
+- [x] Üç koboltun haber, zincir üstü gözlem ve teknik matris verilerini ortak; kaynak, zaman, güven ve yorum sınırı alanlarıyla filtrelenebilir haber odası sözleşmesine dönüştür.
+- [x] Balina izleme koboltu için işlem kanıtı, adres etiketi, çoklu sağlayıcı uzlaşması, borsa içi transfer ve manipülasyon filtrelerini tanımla.
+- [x] Teknik matris koboltu için 24 saatlik olasılık bandında getiri, volatilite, hacim, likidite ve doğrulanmış dış sinyalleri belirsizlik notuyla birleştiren gösterge setini tasarla.
+
+- [x] Kullanıcının 12 Ağustos 20:45 Europe/Istanbul ekran görüntüsündeki yayın alanı ERR_CONNECTION_RESET durumunu sandbox erişimi, DNS/TLS ve alternatif önizleme bağlantısıyla yeniden karşılaştır — 20:46’da yayın alanı IPv4 üzerinden Cloudflare `200`, önizleme adresi `200` ve bağlı tarayıcıda ana ekran başarıyla açıldı; IPv6 yolu sandbox’ta hâlâ bağlanamıyor.
+
+- [x] Alternatif önizleme alanında OAuth girişinin reddedilen redirect URI kökenini doğrula; güvenli yönlendirme akışını değiştirmeden uygulanabilir erişim çözümünü belirle — istemcinin `window.location.origin` değeri alan adı sonunda nokta taşıdığında OAuth izin listesi eşleşmiyordu; yalnızca bu DNS eşdeğeri son nokta kaldırılarak callback URI normalleştirildi. 25 test, TypeScript ve Vercel derlemesi geçti.
+
+- [x] Alan adı sonunda nokta ile açılan önizlemede giriş başlamadan önce kanonik kökene geçerek OAuth nonce çerezinin callback kökeniyle aynı hostta oluşmasını sağla — girişten önce sayfa, yol ve sorgu parametreleri korunarak noktasız kökene taşınıyor; nonce çerezi ve callback artık aynı hostta oluşuyor. 26 test, TypeScript ve Vercel derlemesi geçti.
+
+- [x] Haber odasında sağ canlı varlık akışını ana 3B sahnenin sağ sütununa geri al; sol ve sağ akış panellerini masaüstünde aynı hizada soldan sağa sırala, mobilde okunabilir biçimde istifle — üç sütunlu düzen 960 px altına kadar korunuyor; 1366 px masaüstünde sağ akış ana sahnenin sağında, 390 px mobilde akışlar okunabilir sırayla istiflenmiş olarak doğrulandı.
+
+- [ ] Güncel kaynak kodu, Vercel/GitHub belgeleri ve son OAuth/haber odası düzenlemelerini içeren gizli bilgi içermeyen aktarım ZIP paketini yeniden oluştur ve içeriğini denetle.

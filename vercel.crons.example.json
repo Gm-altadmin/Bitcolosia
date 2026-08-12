@@ -1,0 +1,15 @@
+{
+  "note": "Bu dosya bilgi amaçlıdır; vercel.json içine doğrudan kopyalamayın. Önce VERCEL_CRON_SECRET ile cron kimlik doğrulama adaptörünü tamamlayın.",
+  "crons": [
+    {
+      "path": "/api/scheduled/daily-parcel-valuation",
+      "schedule": "30 7 * * *"
+    },
+    { "path": "/api/scheduled/commentator-awards", "schedule": "45 7 * * *" },
+    {
+      "path": "/api/scheduled/commentator-forecasts",
+      "schedule": "30 8 * * *"
+    },
+    { "path": "/api/scheduled/commentator-research", "schedule": "0 17 * * *" }
+  ]
+}
