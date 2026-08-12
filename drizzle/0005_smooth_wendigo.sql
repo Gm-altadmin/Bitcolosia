@@ -1,0 +1,1 @@
+ALTER TABLE `commentator_program_settings` ADD `researchScheduleCronTaskUid` varchar(65);

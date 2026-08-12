@@ -1,0 +1,55 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1786521318321,
+      "tag": "0000_amusing_preak",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1786521849112,
+      "tag": "0001_material_caretaker",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1786527775977,
+      "tag": "0002_flimsy_monster_badoon",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1786534575937,
+      "tag": "0003_special_blink",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1786534755458,
+      "tag": "0004_empty_proteus",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1786535216299,
+      "tag": "0005_smooth_wendigo",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1786549084087,
+      "tag": "0006_friendly_captain_universe",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+ALTER TABLE `parcel_valuation_settings` ADD `timezoneOffsetMinutes` int DEFAULT 180 NOT NULL;
