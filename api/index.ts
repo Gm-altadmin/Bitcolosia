@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
-import { createApp } from "./_lib/app.js";
+import { createApp } from "../server/_core/app";
 
 /**
  * Vercel Node.js serverless giriş noktası.
